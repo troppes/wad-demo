@@ -1,0 +1,22 @@
+quarkus:
+  langchain4j:
+    easy-rag:
+      path: src/main/resources/easy-rag-catalog
+# To persist the RAG
+#      reuse-embeddings:
+#        enabled: true
+    timeout: 60s
+    ollama:
+      chat-model:
+        model-name: granite3.3:8b
+
+# Docling Stuff
+
+#  rest-client:
+#    document-conversion-api:
+#      url: http://localhost:5001
+#      read-timeout: 600000
+#  docling:
+#    log-requests: true
+#    log-responses: true
+#    base-url: http://localhost:5001
