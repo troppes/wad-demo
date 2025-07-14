@@ -1,12 +1,5 @@
 quarkus:
   langchain4j:
-    mcp:
-#      filesystem:
-#        transport-type: stdio
-#        command: npm,exec,@modelcontextprotocol/server-filesystem@0.6.2,playground
-#        log-requests: true
-#        log-responses: true
-
     easy-rag:
       path: src/main/resources/easy-rag-catalog
 # To persist the RAG
@@ -33,14 +26,3 @@ quarkus:
 #    log-requests: true
 #    log-responses: true
 #    base-url: http://localhost:5001
-
-# Enable comprehensive logging
-  log:
-    level:
-      dev.wad: DEBUG
-      io.quarkiverse.langchain4j: DEBUG
-      dev.langchain4j: DEBUG
-      ROOT: INFO
-    console:
-      enable: true
-      format: "%d{HH:mm:ss} %-5p [%c{2.}] (%t) %s%e%n"
